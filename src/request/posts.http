@@ -1,0 +1,14 @@
+GET http://localhost:3000/posts
+
+###
+GET http://localhost:3000/posts/basic
+
+###
+GET http://localhost:3000/posts/66337ed39da19b66512b617c
+
+###
+GET http://localhost:3000/posts/66337ed39da19b66512b617c/comments
+
+###
+POST http://localhost:3000/posts/
+Content-Type: application/json

@@ -1,0 +1,11 @@
+GET http://localhost:3000/comments
+
+###
+GET http://localhost:3000/comments/?postId=66337ed39da19b66512b617c
+
+###
+GET http://localhost:3000/comments/?postId=123123
+
+###
+POST http://localhost:3000/comments
+Content-Type: application/json

@@ -1,0 +1,11 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/basic
+
+###
+GET http://localhost:3000/users/661fff54b630a33f4a705786
+
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
