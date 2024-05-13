@@ -6,6 +6,10 @@ GET http://localhost:3000/users/basic
 ###
 GET http://localhost:3000/users/661fff54b630a33f4a705786
 
+
+###
+GET http://localhost:3000/users?id[]=663359e6100837edcc6854b1&id[]=66335a16100837edcc6854bb
+
 ###
 POST http://localhost:3000/users/
 Content-Type: application/json

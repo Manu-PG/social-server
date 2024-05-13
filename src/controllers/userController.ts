@@ -2,8 +2,10 @@ import { Request, Response } from 'express';
 import userModel from '../models/userModel';
 
 export const getAllUsers = async (req: Request, res: Response) => {
+  const filter = req.query.id ? { _id: req.query.id } : {};
+
   try {
-    const userDocs = await userModel.find();
+    const userDocs = await userModel.find(filter);
     res.json(userDocs);
   } catch (error) {
     res.status(500).json({ error: (error as Error).message });
